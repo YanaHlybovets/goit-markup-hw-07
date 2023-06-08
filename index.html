@@ -117,8 +117,8 @@
                                     <use href="./images/icons.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="content-title value-header">Strategy</h3>
-                            <p class="content value-text">Our goal is to identify the business problem to walk away with the
+                            <h3 class="content-title">Strategy</h3>
+                            <p class="content">Our goal is to identify the business problem to walk away with the
                                 perfect and
                                 creative solution.
                             </p>
@@ -129,8 +129,8 @@
                                     <use href="./images/icons.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="content-title value-header">Punctuality</h3>
-                            <p class="content value-text">Bring the key message to the brand's audience for the best price
+                            <h3 class="content-title">Punctuality</h3>
+                            <p class="content">Bring the key message to the brand's audience for the best price
                                 within the
                                 shortest possible time.
                             </p>
@@ -141,8 +141,8 @@
                                     <use href="./images/icons.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="content-title value-header">Diligence</h3>
-                            <p class="content value-text">Research and confirm brands that present the strongest digital
+                            <h3 class="content-title">Diligence</h3>
+                            <p class="content">Research and confirm brands that present the strongest digital
                                 growth
                                 opportunities and minimize risk.
                             </p>
@@ -153,11 +153,27 @@
                                     <use href="./images/icons.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="content-title value-header">Technologies</h3>
-                            <p class="content value-text">Design practice focused on digital experiences. We bring forth a
+                            <h3 class="content-title">Technologies</h3>
+                            <p class="content">Design practice focused on digital experiences. We bring forth a
                                 deep passion for
                                 problem-solving.
                             </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content-page-activities">
+                <div class="container">
+                    <h2 class="secondary-header service">What are we doing</h2>
+                    <ul class="list service-list">
+                        <li class="service-item">
+                            <img width="360" height="300" src="./images/image1.jpg" alt="computer">
+                        </li>
+                        <li class="service-item">
+                            <img width="360" height="300" src="./images/image2.jpg" alt="smartphone">
+                        </li>
+                        <li class="service-item">
+                            <img width="360" height="300" src="./images/image3.jpg" alt="both">
                         </li>
                     </ul>
                 </div>
@@ -370,7 +386,7 @@
         <footer class="footer-bgd">
             <div class="footer-div container">
                 <div class="footer-box-logo">
-                    <a class="logo link footer-link" href="./index.html" title="WebStudio">
+                    <a class="logo-ft link footer-link" href="./index.html" title="WebStudio">
                         Web<span class="logo-footer-studio">Studio</span>
                     </a>
                     <p class="footer-content">Increase the flow of customers and sales for your business with digital
@@ -414,7 +430,7 @@
                 <div class="form-footer">
                     <p class="footer-input-name">Subscribe</p>
                     <form class="form">
-                        <label class="footer-div">
+                        <label class="footer-label">
                             <input class="footer-input" type="email" name="email" placeholder="E-mail" />
                         </label>
                         <button type="submit" class="subscribe-button">Subscribe
@@ -426,6 +442,63 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-modal-button" data-modal-close>
+                    <svg width="8" height="8" class="close-button-svg">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="modal-header">Leave your contacts and we will call you back</p>
+                <form name="signup_form" autocomplete="on" novalidate>
+                    <div class="modal-form">
+                        <label for="user-name" class="modal-input-name">Name</label>
+                        <div class="icon-section">
+                            <input id="user-name" class="modal-input" type="text" name="user-name" autofocus required />
+                            <svg class="input-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form">
+                        <label for="phone" class="modal-input-name">Phone</label>
+                        <div class="icon-section">
+                            <input id="phone" class="modal-input" type="tel" name="Phone" required />
+                            <svg class="input-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form">
+                        <label for="mail" class="modal-input-name">Email</label>
+                        <div class="icon-section">
+                            <input id="mail" class="modal-input" type="email" name="Email" required />
+                            <svg class="input-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form-comment">
+                        <label for="user-comment" class="modal-input-name">Comment</label>
+                        <textarea id="user-comment" class="modal-comment" name="user-comment" rows="5"
+                            placeholder="Text input"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input id="user-privacy" class="visually-hidden" value="true" type="checkbox" name="user-privacy" />
+                        <label for="user-privacy" class="checkbox-text">
+                            <span class="checkbox-box">
+                                <svg width="10" height="8">
+                                    <use href="./images/icons.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a class="policy-link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button class="send-button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
         <script src="./modal.js"></script>
         <script src="./mobile-menu.js"></script>
 </body>
