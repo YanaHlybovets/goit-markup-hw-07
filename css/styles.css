@@ -259,11 +259,6 @@ section {
 
 /* BURGER MENU */
 
-.is-open {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
 .mobile-menu {
     width:100%;
@@ -278,6 +273,15 @@ section {
     display: flex;
     flex-direction: column;
     margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .close-button {
